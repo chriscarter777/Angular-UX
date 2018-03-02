@@ -1,0 +1,71 @@
+.directory{
+    margin-left: 50px;
+}
+
+.custItem{
+    margin-top:20px;
+}
+
+.namePanel{
+    z-index: 5;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height:65px;
+    width:60%;
+    background: #FFFFFF;
+    padding:5px 0 0 20px;
+    color:gray;
+    border:1px solid lightgray;
+    box-shadow: -1px 2px 2px #999999;
+}
+
+.namePanel img{
+    width: 45px;
+    margin-right:10px;
+}
+
+.logoName{
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.custName1{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.expander{
+    font-size: 20px;
+    background: transparent;
+    border-width: 0;
+    color:gray;
+    margin-right:20px;
+}
+
+.expander:active{
+    border:0px solid transparent;
+}
+
+.detailPanel{
+    z-index: 9;
+    display:block;
+    height:115px;
+    width:60%;
+    background: #F6F6F6;
+    font-size: 14px;
+    line-height: 8px;
+    padding:5px 0 0 20px;
+    border:1px solid lightgray;
+    box-shadow: 0 2px 2px #999999;
+}
+
+.custName2{
+    font-size: 14px;
+    font-weight: 600;
+    color:#222222;
+    line-height: 8px;
+}

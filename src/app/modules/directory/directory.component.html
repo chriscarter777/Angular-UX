@@ -1,0 +1,21 @@
+<div *ngIf="!panels">...Loading</div>
+<div class=directory>
+    <div *ngFor="let panel of panels; let idx = index" class="custItem">
+        <div class="namePanel">
+            <div class="logoName">
+                <img *ngIf="panel.customer.logo" [src]=panel.customer.logo />
+                <span class="custName1">{{panel.customer.name}}</span>
+            </div>
+            <div>
+                <button *ngIf='!panel.expanded' class='expander down' (click)="onExpand(idx)">&#709;</button>
+                <button *ngIf='panel.expanded'class='expander up' (click)="onContract(idx)">&#708;</button>
+            </div>
+        </div>
+        <div *ngIf='panel.expanded' class="detailPanel">
+                <p class="custName2">{{panel.customer.name}}</p>
+                <p>{{panel.customer.address}}</p>
+                <p>{{panel.customer.city}},&nbsp;{{panel.customer.state}}&nbsp;{{panel.customer.zipcode}}</p>
+                <p>{{panel.customer.phone}}</p>   
+        </div>
+   </div>
+</div>
